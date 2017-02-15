@@ -6,15 +6,19 @@
 class FBullCowGame
 {
 public:
-	void Reset(); // TODO make a more rich return value
-	int GetMaxTries();
-	int LengthOfIso(); // Returns how many characters are in the word
-	int GetCurrentTry();
-	bool IsGameWon();
-	bool CheckGuessValid(std::string); // TODO make a more rich return value
+	FBullCowGame(); // constructor
+
+	int GetMaxTries() const;
+	int GetCurrentTry() const;
+	bool IsGameWon() const;
+
+	void Reset();
+	bool CheckGuessValidity(std::string); // TODO make a more rich return value
+	// provide a method for counting bulls and cows, and increasing try number
 
 
 private:
-	int MyCurrentTry = 1;
-	int MyMaxTries = 5;
-};
+	// see constructor for initialisation
+	int MyCurrentTry;
+	int MyMaxTries;
+}
