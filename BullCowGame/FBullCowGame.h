@@ -21,4 +21,4 @@ private:
 	// see constructor for initialisation
 	int MyCurrentTry;
 	int MyMaxTries;
-}
+};
